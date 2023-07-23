@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "application"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+protocol = { git = "https://github.com/dw-mt/ExampleShared.git" }
+
+[tool.poetry.scripts]
+app = "application.app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
